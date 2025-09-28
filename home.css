@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(to top, rgb(120, 153, 245), rgb(158, 236, 239), rgb(63, 128, 172));
+  margin: 0;
+  padding: 0;
+}
+
+body h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #cbd2f8;
+}
+
+.hero-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #434040;
+}
+
+/* Place Images */
+.place-img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  text-align: justify;
+  color: #0c0c0c;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.section + .section {
+  border-top: 1px solid #fff16e;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+/* Navbar */
+.navbar {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 50px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+  color: rgb(232, 46, 114);
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #08141b;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .navbar a {
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  .section h1 {
+    font-size: 1.6rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+
+  .place-img {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 25px 15px;
+  }
+
+  .section {
+    padding: 25px 15px;
+  }
+
+  .section h1 {
+    font-size: 1.4rem;
+  }
+
+  .section p {
+    font-size: 0.9rem;
+  }
+
+  .place-img {
+    max-height: 250px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

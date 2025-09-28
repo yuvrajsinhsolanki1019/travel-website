@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRAVEL WEBSITE - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico.jpg">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+
+
+  <div class="contact-container">
+    <form action="submit_form.php" method="post">
+      <h2>Get in Touch</h2>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <div class="gender">
+        <label>Gender:</label>
+        <label for="male"><input type="radio" id="male" name="gender" value="male" /> Male</label>
+        <label for="female"><input type="radio" id="female" name="gender" value="female" /> Female</label>
+      </div>
+
+      <label for="Country">Select Country:</label>
+      <select id="country" name="country">
+        <option value="UAE">UAE</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="India">India</option>
+        <option value="Australia">Australia</option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea>
+
+      <input type="submit" value="Submit" class="btn" />
+      <input type="reset" value="Reset" class="btn reset" />
+    </form>
+
+    <div class="contact-info">
+      <h1>Our Contact Details</h1>
+      <p><b>Email:</b> 
+        <a href="mailto:travelwithjourneyjunction.com">travelwithjourneyjunction.com</a>
+      </p>
+      <p><b>Contact Number:</b> 
+        <a href="tel:+919998989911">+91 9998989911</a>
+      </p>
+      <p>For more information contact us anytime!</p>
+    </div>
+  </div>
+
+
+  <h2 style="text-align:center;">Social Media Links</h2>
+  <div class="social-links">
+    <a href="https://www.instagram.com/yuvrajsinh_1019?igsh=MTZmcXJzYzFzOHM4Mw==" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.linkedin.com/in/yuvrajsinh-solanki-b59bb8352" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+
+  
+  <footer>
+    <p>© 2025 JourneyJunction | Travel the World</p>
+  </footer>
+</body>
+</html>
